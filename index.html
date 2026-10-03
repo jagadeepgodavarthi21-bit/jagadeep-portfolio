@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. Jagadeep Siva Sai | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .profile-photo {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2563eb;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #111827;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 17px;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #2563eb;
+        }
+
+        .card h3 {
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            background: #f8fafc;
+            margin: 10px 0;
+            padding: 14px 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            background: #eff6ff;
+        }
+
+        .goal {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 29px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <img src="profile.jpg" alt="G. Jagadeep Siva Sai" class="profile-photo">
+
+        <h1>G. Jagadeep Siva Sai</h1>
+
+        <p>🎓 First Year B.Tech CSE Student</p>
+
+        <p>🔐 Cybersecurity | 🌐 Web Development | 💼 Future Businessman</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#details">Details</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#interests">Interests</a>
+        <a href="#business">Business</a>
+        <a href="#goal">Goal</a>
+        <a href="#strengths">Strengths</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>👨‍💻 About Me</h2>
+
+        <p>
+            Hello! I am <strong>G. Jagadeep Siva Sai</strong>,
+            a first-year Computer Science and Engineering student at
+            <strong>Vishnu Institute of Technology</strong>.
+        </p>
+
+        <br>
+
+        <p>
+            I am interested in cybersecurity, web development,
+            ethical hacking, digital security and business.
+        </p>
+    </section>
+
+    <section id="details">
+        <h2>👤 Basic Details</h2>
+
+        <div class="details">
+            <div class="card">
+                <h3>👤 Name</h3>
+                <p>G. Jagadeep Siva Sai</p>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Course</h3>
+                <p>B.Tech</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Branch</h3>
+                <p>Computer Science and Engineering (CSE)</p>
+            </div>
+
+            <div class="card">
+                <h3>📚 Year</h3>
+                <p>First Year</p>
+            </div>
+
+            <div class="card">
+                <h3>🏫 College</h3>
+                <p>Vishnu Institute of Technology</p>
+            </div>
+
+            <div class="card">
+                <h3>📖 Previous College</h3>
+                <p>Tirumala Junior College</p>
+            </div>
+
+            <div class="card">
+                <h3>🏫 School</h3>
+                <p>Montessoris High School</p>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Career Goal</h3>
+                <p>Successful Businessman</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>🎓 Education</h2>
+
+        <div class="card">
+            <h3>B.Tech – Computer Science and Engineering</h3>
+            <p>Vishnu Institute of Technology</p>
+            <p>First Year</p>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Tirumala Junior College</p>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h3>Schooling</h3>
+            <p>Montessoris High School</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>💻 Technical Skills</h2>
+
+        <ul>
+            <li>💻 C Programming</li>
+            <li>🌐 HTML & CSS</li>
+            <li>🐍 Basic Python</li>
+            <li>🧩 Problem Solving</li>
+            <li>🖥️ Basic Computer Skills</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>🌟 Hobbies</h2>
+
+        <ul>
+            <li>🏸 Playing Badminton</li>
+            <li>🏏 Playing Cricket</li>
+            <li>🎬 Watching Movies</li>
+            <li>🎮 Playing Games</li>
+            <li>📸 Photography</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>💡 Areas of Interest</h2>
+
+        <ul>
+            <li>🛡️ <strong>Cybersecurity</strong></li>
+            <li>🌐 <strong>Web Development</strong></li>
+            <li>🔍 <strong>Ethical Hacking & Digital Security</strong></li>
+        </ul>
+    </section>
+
+    <section id="business">
+        <h2>💼 Business Interests</h2>
+
+        <ul>
+            <li>🚀 <strong>Entrepreneurship</strong></li>
+            <li>📊 <strong>Business Management</strong></li>
+        </ul>
+    </section>
+
+    <section id="goal">
+        <h2>🎯 My Goal</h2>
+
+        <div class="goal">
+            My goal is to become a successful businessman by developing
+            strong leadership, communication, problem-solving and business
+            skills. I want to build my own business and create something
+            valuable in the future.
+        </div>
+    </section>
+
+    <section id="strengths">
+        <h2>💪 Strengths</h2>
+
+        <ul>
+            <li>😊 <strong>Positive Thinking</strong></li>
+            <li>🚀 <strong>Self-Motivation</strong></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>📚 Learning Goals</h2>
+
+        <ul>
+            <li>💻 Improve Programming Skills</li>
+            <li>🔐 Learn Cybersecurity</li>
+            <li>🌐 Improve Web Development Skills</li>
+            <li>💼 Develop Business Knowledge</li>
+            <li>🚀 Build Useful Projects</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>📞 Contact Me</h2>
+
+        <p>📧 <strong>Email:</strong> jagadeepgodavarthi21@gmail.com</p>
+        <p>📱 <strong>Phone:</strong> 8790183916</p>
+        <p>🎓 <strong>College:</strong> Vishnu Institute of Technology</p>
+    </section>
+
+    <footer>
+        <p>© 2026 G. Jagadeep Siva Sai</p>
+        <p>💻 CSE Student | 🔐 Cybersecurity Enthusiast | 💼 Future Businessman</p>
+    </footer>
+
+</body>
+</html>
