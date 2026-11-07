@@ -187,6 +187,55 @@
                 font-size: 24px;
             }
         }
+        
+/* Elegant dark animated background */
+body {
+    background: linear-gradient(
+        -45deg,
+        #0b1220,
+        #111827,
+        #10243a,
+        #15152e
+    );
+    background-size: 300% 300%;
+    animation: backgroundMove 18s ease infinite;
+    color: #e5e7eb;
+}
+
+/* Background movement */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Gentle profile photo animation */
+.profile-photo {
+    animation: photoFloat 4s ease-in-out infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    transition: box-shadow 0.4s ease;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+}
+
+@keyframes photoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
     </style>
 </head>
 
